@@ -24,8 +24,20 @@ h1, h2, h3, h4, h5, h6 {
       <a href="#menu" class="w3-bar-item w3-button">Menu</a>
       <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
     </div>
+	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
 </div>
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#menu" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
+  <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button">Gallery</a>
+</nav>
+
+<a href="#home" class="w3-button w3-light-grey w3-bottom"><i class="fa fa-arrow-up w3-margin-right"></i></a>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
